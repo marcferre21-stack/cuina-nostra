@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Totes les receptes de cuina espanyola i mediterrània de Cuina Nostra">
+  <title>Receptes — Cuina Nostra</title>
+  <meta name="keywords" content="receptes mediterrànies, llistat receptes, cuina catalana, primers, segons, postres">
+  <meta name="author" content="Cuina Nostra">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Receptes — Cuina Nostra">
+  <meta property="og:description"
+    content="Totes les receptes de cuina espanyola i mediterrània. Filtra per primers, segons i postres.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ca_ES">
+  <link rel="stylesheet" href="scss/main.scss">
+</head>
+
+<body>
+
+  <a href="#contingut-principal" class="skip-link">Salta al contingut principal</a>
+
+  <header>
+    <nav aria-label="Navegació principal">
+      <a href="index.html" class="nav__logo">Cuina Nostra</a>
+      <div class="nav__links" id="nav__links">
+        <a href="index.html">Inici</a>
+        <a href="categoria.html" aria-current="page">Receptes</a>
+        <a href="links.html">Fonts</a>
+      </div>
+      <button class="nav__hamburguesa" aria-label="Obrir menú" aria-expanded="false" aria-controls="nav__links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <div class="capcalera-interior">
+      <h2>Totes les Receptes</h2>
+      <p>Cuina espanyola i mediterrània</p>
+    </div>
+  </header>
+
+  <main id="contingut-principal">
+
+    <section aria-labelledby="titol-receptes">
+      <h2 id="titol-receptes">Totes les receptes</h2>
+
+      <div class="buscador">
+        <label for="cerca" class="sr-only">Cerca una recepta</label>
+        <input type="search" id="cerca" class="buscador__input" placeholder="Cerca una recepta..."
+          aria-label="Cerca una recepta" autocomplete="off">
+      </div>
+
+      <div class="filtres" role="group" aria-label="Filtrar receptes per categoria">
+        <button class="filtre actiu" data-filtre="tot">Totes</button>
+        <button class="filtre" data-filtre="primers">Primers</button>
+        <button class="filtre" data-filtre="segons">Segons</button>
+        <button class="filtre" data-filtre="postres">Postres</button>
+      </div>
+
+      <ul class="llista-receptes" aria-label="Llista de receptes">
+
+        <li class="targeta" data-categoria="primers">
+          <img src="images/pa-amb-tomaquet.jpg" alt="Pa amb tomàquet amb oli d'oliva i all">
+          <div class="targeta__cos">
+            <span class="targeta__categoria">Primers</span>
+            <h3>Pa amb Tomàquet</h3>
+            <p>El clàssic català per excel·lència. Senzill, fresc i deliciós.</p>
+            <a href="det1.html">Veure recepta</a>
+          </div>
+        </li>
+
+        <li class="targeta" data-categoria="segons">
+          <img src="images/fideua.jpg" alt="Fideuà de marisc amb allioli">
+          <div class="targeta__cos">
+            <span class="targeta__categoria">Segons</span>
+            <h3>Fideuà</h3>
+            <p>El plat estrella de la costa valenciana, fet amb fideus i marisc fresc.</p>
+            <a href="det2.html">Veure recepta</a>
+          </div>
+        </li>
+
+        <li class="targeta" data-categoria="segons">
+          <img src="images/paella.jpg" alt="Paella valenciana amb pollastre i verdures">
+          <div class="targeta__cos">
+            <span class="targeta__categoria">Segons</span>
+            <h3>Paella Valenciana</h3>
+            <p>La recepta tradicional valenciana amb pollastre, conill i garrofó.</p>
+            <a href="#">Pròximament</a>
+          </div>
+        </li>
+
+        <li class="targeta" data-categoria="postres">
+          <img src="images/crema-catalana.jpg" alt="Crema catalana amb sucre cremat">
+          <div class="targeta__cos">
+            <span class="targeta__categoria">Postres</span>
+            <h3>Crema Catalana</h3>
+            <p>La postres catalana per excel·lència, cremosa i amb sucre caramel·litzat.</p>
+            <a href="#">Pròximament</a>
+          </div>
+        </li>
+
+        <li class="targeta" data-categoria="primers">
+          <img src="images/escalivada.jpg" alt="Escalivada de verdures rostides amb oli">
+          <div class="targeta__cos">
+            <span class="targeta__categoria">Primers</span>
+            <h3>Escalivada</h3>
+            <p>Verdures rostides al forn amb un raig d'oli d'oliva verge extra.</p>
+            <a href="#">Pròximament</a>
+          </div>
+        </li>
+
+        <li class="targeta" data-categoria="postres">
+          <img src="images/turro.jpg" alt="Torró d'Alacant amb ametlles">
+          <div class="targeta__cos">
+            <span class="targeta__categoria">Postres</span>
+            <h3>Torró d'Alacant</h3>
+            <p>El dolç tradicional nadalenc fet amb mel i ametlles torrades.</p>
+            <a href="#">Pròximament</a>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+<footer>
+  <div class="footer__contingut">
+    <p class="footer__nom">Cuina Nostra</p>
+    <p>Marc Ferré Pedrero · Eines HTML i CSS · UOC</p>
+    <p><a href="links.html">Fonts i atribucions</a></p>
+  </div>
+</footer>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

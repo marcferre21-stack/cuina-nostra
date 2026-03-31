@@ -1,0 +1,858 @@
+//@use 'swiper/scss';
+
+// ============================================
+// VARIABLES
+// ============================================
+
+$color-fons: #faf8f5;
+$color-text: #1a1a1a;
+$color-accent: #c4622d;
+$color-accent-fosc: #9e4e24;
+$color-secundari: #4a6741;
+$color-gris: #6b6b6b;
+$color-gris-clar: #e8e4df;
+
+$font-titol: 'Playfair Display', Georgia, serif;
+$font-cos: 'Lato', Helvetica, sans-serif;
+
+$mida-maxima: 1200px;
+$espai-s: 0.5rem;
+$espai-m: 1rem;
+$espai-l: 2rem;
+$espai-xl: 4rem;
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobil: 480px;
+
+// ============================================
+// RESET I BASE
+// ============================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-cos;
+  background-color: $color-fons;
+  color: $color-text;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-accent-fosc;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: 3px solid $color-accent;
+    outline-offset: 3px;
+  }
+}
+
+// ============================================
+// ACCESSIBILITAT — SKIP LINK
+// ============================================
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: $espai-m;
+  background: $color-accent;
+  color: white;
+  padding: $espai-s $espai-m;
+  border-radius: 0 0 4px 4px;
+  font-weight: bold;
+  z-index: 9999;
+  transition: top 0.2s;
+
+  &:focus {
+    top: 0;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+// ============================================
+// TIPOGRAFIA
+// ============================================
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-titol;
+  line-height: 1.2;
+  color: $color-text;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: $espai-m;
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  margin-bottom: $espai-s;
+}
+
+p {
+  margin-bottom: $espai-m;
+  max-width: 70ch;
+}
+
+// ============================================
+// LAYOUT
+// ============================================
+
+.contenidor {
+  max-width: $mida-maxima;
+  margin: 0 auto;
+  padding: 0 $espai-l;
+}
+
+// ============================================
+// HEADER I NAVEGACIÓ
+// ============================================
+
+header {
+  background-color: white;
+}
+
+nav {
+  max-width: $mida-maxima;
+  margin: 0 auto;
+  padding: $espai-m $espai-l;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $color-gris-clar;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+
+  .nav__logo {
+    font-family: $font-titol;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-accent;
+      text-decoration: none;
+    }
+  }
+
+  .nav__links {
+    display: flex;
+    gap: $espai-l;
+    align-items: center;
+
+    a {
+      font-family: $font-cos;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $color-gris;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $color-accent;
+        text-decoration: none;
+      }
+
+      &[aria-current="page"] {
+        color: $color-accent;
+        border-bottom: 2px solid $color-accent;
+        padding-bottom: 2px;
+      }
+    }
+  }
+}
+
+.nav__hamburguesa {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: $espai-s;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: $color-text;
+    transition: all 0.3s ease;
+  }
+
+  &.obert {
+    span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+}
+
+// ============================================
+// HERO
+// ============================================
+
+.hero {
+  min-height: 85vh;
+  background-image:
+    linear-gradient(to bottom right,
+      rgba(0, 0, 0, 0.5),
+      rgba($color-accent, 0.3)),
+    url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: $espai-xl $espai-l;
+
+  &__contingut {
+    max-width: $mida-maxima;
+    margin: 0 auto;
+    width: 100%;
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  &__subtitol {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: $espai-m;
+    max-width: 100%;
+  }
+
+  h1 {
+    color: white;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: $espai-l;
+
+    em {
+      color: rgba(255, 255, 255, 0.85);
+      font-style: italic;
+    }
+  }
+}
+
+// ============================================
+// ANIMACIONS
+// ============================================
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.targeta {
+  animation: fadeInUp 0.5s ease both;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+// ============================================
+// MAIN I SECCIONS
+// ============================================
+
+main {
+  max-width: $mida-maxima;
+  margin: 0 auto;
+  padding: $espai-xl $espai-l;
+
+  section {
+    margin-bottom: $espai-xl;
+  }
+}
+
+// ============================================
+// BOTÓ
+// ============================================
+
+.btn {
+  display: inline-block;
+  background-color: $color-accent;
+  color: white;
+  padding: $espai-m $espai-l;
+  font-family: $font-cos;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  margin-top: $espai-m;
+
+  &:hover {
+    background-color: $color-accent-fosc;
+    color: white;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 3px solid $color-accent-fosc;
+    outline-offset: 3px;
+  }
+}
+
+// ============================================
+// TARGETES
+// ============================================
+
+.targetes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: $espai-l;
+  margin-top: $espai-l;
+}
+
+.targeta {
+  background: white;
+  border: 1px solid $color-gris-clar;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__cos {
+    padding: $espai-m;
+
+    h3 {
+      margin-bottom: $espai-s;
+    }
+
+    p {
+      color: $color-gris;
+      font-size: 0.95rem;
+      margin-bottom: $espai-m;
+    }
+
+    a {
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__categoria {
+    display: inline-block;
+    background-color: $color-gris-clar;
+    color: $color-gris;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    margin-bottom: $espai-s;
+  }
+}
+
+// ============================================
+// FILTRES DE CATEGORIA
+// ============================================
+
+.filtres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $espai-s;
+  margin-bottom: $espai-l;
+}
+
+.filtre {
+  background: none;
+  border: 2px solid $color-gris-clar;
+  color: $color-gris;
+  padding: $espai-s $espai-m;
+  font-family: $font-cos;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $color-accent;
+    color: $color-accent;
+  }
+
+  &:focus {
+    outline: 3px solid $color-accent;
+    outline-offset: 3px;
+  }
+
+  &.actiu {
+    background-color: $color-accent;
+    border-color: $color-accent;
+    color: white;
+  }
+}
+
+.llista-receptes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: $espai-l;
+
+  .targeta {
+    &.amagat {
+      display: none;
+    }
+  }
+}
+
+// ============================================
+// PÀGINES DE DETALL
+// ============================================
+
+.recepta__capcalera {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $espai-xl;
+  margin-bottom: $espai-xl;
+  align-items: start;
+
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.recepta__imatge-destacada {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+
+  @media (max-width: $breakpoint-tablet) {
+    height: 250px;
+  }
+}
+
+.recepta__info {
+  h2 {
+    font-style: italic;
+    margin-bottom: $espai-m;
+  }
+}
+
+.recepta__descripcio {
+  font-size: 1.1rem;
+  color: $color-gris;
+  margin-bottom: $espai-l;
+}
+
+.recepta__dades {
+  border-top: 1px solid $color-gris-clar;
+  padding-top: $espai-m;
+
+  li {
+    padding: $espai-s 0;
+    border-bottom: 1px solid $color-gris-clar;
+    font-size: 0.95rem;
+  }
+}
+
+article {
+  section {
+    margin-bottom: $espai-xl;
+
+    ul {
+      list-style: disc;
+      padding-left: $espai-l;
+
+      li {
+        margin-bottom: $espai-s;
+      }
+    }
+  }
+}
+
+// ============================================
+// SWIPER — CARRUSEL
+// ============================================
+
+.swiper {
+  width: 100%;
+  height: 350px;
+  margin-top: $espai-m;
+
+  @media (max-width: $breakpoint-mobil) {
+    height: 220px;
+  }
+}
+
+.swiper-slide {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+  background: rgba($color-accent, 0.8);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &::after {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-accent;
+}
+
+// ============================================
+// VÍDEO
+// ============================================
+
+.video-contenidor {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: $espai-m;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+// ============================================
+// PÀGINA DE LINKS
+// ============================================
+
+.links-seccio {
+  article {
+    margin-bottom: $espai-l;
+    padding-bottom: $espai-l;
+    border-bottom: 1px solid $color-gris-clar;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: $espai-l;
+      margin-top: $espai-s;
+
+      li {
+        margin-bottom: $espai-s;
+      }
+    }
+  }
+}
+
+// ============================================
+// FOOTER
+// ============================================
+
+footer {
+  background-color: $color-text;
+  color: $color-gris-clar;
+  text-align: center;
+  padding: $espai-l;
+  margin-top: $espai-xl;
+  font-size: 0.9rem;
+
+  a {
+    color: $color-gris-clar;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+// ============================================
+// RESPONSIVE
+// ============================================
+
+@media (max-width: $breakpoint-tablet) {
+  main {
+    padding: $espai-l $espai-m;
+  }
+
+  .header__titol {
+    padding: $espai-l $espai-m;
+  }
+
+  header nav {
+    padding: $espai-m;
+    gap: $espai-m;
+  }
+}
+
+@media (max-width: $breakpoint-mobil) {
+
+  .targetes,
+  .llista-receptes {
+    grid-template-columns: 1fr;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    gap: $espai-s;
+  }
+}
+
+// ============================================
+// BUSCADOR
+// ============================================
+
+.buscador {
+  margin-bottom: $espai-m;
+
+  &__input {
+    width: 100%;
+    max-width: 500px;
+    padding: $espai-m;
+    font-family: $font-cos;
+    font-size: 1rem;
+    border: 2px solid $color-gris-clar;
+    background: white;
+    color: $color-text;
+    outline: none;
+    transition: border-color 0.2s ease;
+
+    &::placeholder {
+      color: $color-gris;
+    }
+
+    &:focus {
+      border-color: $color-accent;
+    }
+  }
+}
+
+// ============================================
+// ACCESSIBILITAT — CLASSE INVISIBLE
+// ============================================
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// ============================================
+// TAULA NUTRICIONAL
+// ============================================
+
+table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  margin-top: $espai-m;
+  font-size: 0.95rem;
+
+  caption {
+    font-size: 0.85rem;
+    color: $color-gris;
+    text-align: left;
+    margin-bottom: $espai-s;
+    font-style: italic;
+  }
+
+  th {
+    background-color: $color-accent;
+    color: white;
+    padding: $espai-s $espai-m;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: $espai-s $espai-m;
+    border-bottom: 1px solid $color-gris-clar;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  tr:nth-child(even) td {
+    background-color: rgba($color-gris-clar, 0.3);
+  }
+}
+
+// ============================================
+// CONSELLS DEL XEF
+// ============================================
+
+.consells {
+  list-style: none !important;
+  padding-left: 0 !important;
+
+  li {
+    padding: $espai-m;
+    border-left: 3px solid $color-accent;
+    margin-bottom: $espai-m;
+    background-color: rgba($color-gris-clar, 0.3);
+
+    strong {
+      color: $color-accent;
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+}
+
+// ============================================
+// CAPÇALERA INTERIOR
+// ============================================
+
+.capcalera-interior {
+  background-color: $color-accent;
+  padding: $espai-xl $espai-l;
+  text-align: center;
+
+  h2 {
+    color: white;
+    font-style: italic;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 0;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin: $espai-s 0 0 0;
+    max-width: 100%;
+  }
+}
+
+// ============================================
+// PAS A PAS EN IMATGES
+// ============================================
+
+.passos-imatges {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $espai-m;
+  margin-top: $espai-m;
+
+  @media (max-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  figure {
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      color: $color-gris;
+      padding: $espai-s 0;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+}
+
+.footer__contingut {
+  display: flex;
+  flex-direction: column;
+  gap: $espai-s;
+
+  p {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.footer__nom {
+  font-family: $font-titol;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: white;
+}
