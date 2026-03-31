@@ -1,0 +1,21 @@
+{
+  "name": "nostra-cuina",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html src/categoria.html src/det1.html src/det2.html src/links.html",
+    "build": "parcel build src/index.html src/categoria.html src/det1.html src/det2.html src/links.html --dist-dir dist --public-url /"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4",
+    "sass": "^1.98.0"
+  },
+  "dependencies": {
+    "swiper": "^12.1.2"
+  }
+}
