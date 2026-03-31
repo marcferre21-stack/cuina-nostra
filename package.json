@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html src/categoria.html src/det1.html src/det2.html src/links.html",
-    "build": "parcel build src/index.html src/categoria.html src/det1.html src/det2.html src/links.html --dist-dir dist --public-url /"
+    "build": "parcel build src/index.html src/categoria.html src/det1.html src/det2.html src/links.html --dist-dir dist --public-url /cuina-nostra/"
   },
   "keywords": [],
   "author": "",
