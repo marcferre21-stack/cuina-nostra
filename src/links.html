@@ -15,6 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ca_ES">
   <title>Fonts i Atribucions — Cuina Nostra</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="scss/main.scss">
 </head>
 
@@ -24,7 +25,34 @@
 
   <header>
     <nav aria-label="Navegació principal">
-      <a href="index.html" class="nav__logo">Cuina Nostra</a>
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">Cuina Nostra</span>
+        <svg class="olivera" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+          <path class="olivera__tronc"
+                d="M 10 85 Q 60 65 120 50 T 190 20"
+                fill="none"
+                stroke="#8B6F47"
+                stroke-width="2.5"
+                stroke-linecap="round"/>
+          <g transform="translate(45 75) rotate(-40)">
+            <ellipse class="olivera__fulla olivera__fulla--1" cx="0" cy="0" rx="14" ry="5" fill="#6B8E4E"/>
+          </g>
+          <g transform="translate(80 60) rotate(30)">
+            <ellipse class="olivera__fulla olivera__fulla--2" cx="0" cy="0" rx="14" ry="5" fill="#7A9E5A"/>
+          </g>
+          <g transform="translate(115 48) rotate(-35)">
+            <ellipse class="olivera__fulla olivera__fulla--3" cx="0" cy="0" rx="13" ry="4.5" fill="#6B8E4E"/>
+          </g>
+          <g transform="translate(150 35) rotate(25)">
+            <ellipse class="olivera__fulla olivera__fulla--4" cx="0" cy="0" rx="13" ry="4.5" fill="#7A9E5A"/>
+          </g>
+          <g transform="translate(180 20) rotate(-30)">
+            <ellipse class="olivera__fulla olivera__fulla--5" cx="0" cy="0" rx="11" ry="4" fill="#6B8E4E"/>
+          </g>
+          <circle class="olivera__oliva olivera__oliva--1" cx="95" cy="68" r="4" fill="#4A5D3A"/>
+          <circle class="olivera__oliva olivera__oliva--2" cx="130" cy="55" r="4" fill="#4A5D3A"/>
+        </svg>
+      </a>
       <div class="nav__links" id="nav__links">
         <a href="index.html">Inici</a>
         <a href="categoria.html">Receptes</a>

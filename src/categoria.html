@@ -16,6 +16,7 @@
   <meta property="og:image" content="images/hero.jpg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ca_ES">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="scss/main.scss">
 </head>
 
@@ -25,7 +26,34 @@
 
   <header>
     <nav aria-label="Navegació principal">
-      <a href="index.html" class="nav__logo">Cuina Nostra</a>
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">Cuina Nostra</span>
+        <svg class="olivera" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+          <path class="olivera__tronc"
+                d="M 10 85 Q 60 65 120 50 T 190 20"
+                fill="none"
+                stroke="#8B6F47"
+                stroke-width="2.5"
+                stroke-linecap="round"/>
+          <g transform="translate(45 75) rotate(-40)">
+            <ellipse class="olivera__fulla olivera__fulla--1" cx="0" cy="0" rx="14" ry="5" fill="#6B8E4E"/>
+          </g>
+          <g transform="translate(80 60) rotate(30)">
+            <ellipse class="olivera__fulla olivera__fulla--2" cx="0" cy="0" rx="14" ry="5" fill="#7A9E5A"/>
+          </g>
+          <g transform="translate(115 48) rotate(-35)">
+            <ellipse class="olivera__fulla olivera__fulla--3" cx="0" cy="0" rx="13" ry="4.5" fill="#6B8E4E"/>
+          </g>
+          <g transform="translate(150 35) rotate(25)">
+            <ellipse class="olivera__fulla olivera__fulla--4" cx="0" cy="0" rx="13" ry="4.5" fill="#7A9E5A"/>
+          </g>
+          <g transform="translate(180 20) rotate(-30)">
+            <ellipse class="olivera__fulla olivera__fulla--5" cx="0" cy="0" rx="11" ry="4" fill="#6B8E4E"/>
+          </g>
+          <circle class="olivera__oliva olivera__oliva--1" cx="95" cy="68" r="4" fill="#4A5D3A"/>
+          <circle class="olivera__oliva olivera__oliva--2" cx="130" cy="55" r="4" fill="#4A5D3A"/>
+        </svg>
+      </a>
       <div class="nav__links" id="nav__links">
         <a href="index.html">Inici</a>
         <a href="categoria.html" aria-current="page">Receptes</a>
@@ -64,7 +92,17 @@
       <ul class="llista-receptes" aria-label="Llista de receptes">
 
         <li class="targeta" data-categoria="primers">
-          <img src="images/pa-amb-tomaquet.jpg" alt="Pa amb tomàquet amb oli d'oliva i all">
+          <img
+            src="images/optimized/pa-amb-tomaquet-768w.jpg"
+            srcset="images/optimized/pa-amb-tomaquet-480w.jpg 480w,
+                    images/optimized/pa-amb-tomaquet-768w.jpg 768w,
+                    images/optimized/pa-amb-tomaquet-1200w.jpg 1200w,
+                    images/optimized/pa-amb-tomaquet-1600w.jpg 1600w"
+            sizes="(max-width: 600px) 100vw,
+                   (max-width: 900px) 50vw,
+                   33vw"
+            alt="Pa amb tomàquet amb oli d'oliva i all"
+            loading="lazy">
           <div class="targeta__cos">
             <span class="targeta__categoria">Primers</span>
             <h3>Pa amb Tomàquet</h3>
@@ -74,7 +112,17 @@
         </li>
 
         <li class="targeta" data-categoria="segons">
-          <img src="images/fideua.jpg" alt="Fideuà de marisc amb allioli">
+          <img
+            src="images/optimized/fideua-768w.jpg"
+            srcset="images/optimized/fideua-480w.jpg 480w,
+                    images/optimized/fideua-768w.jpg 768w,
+                    images/optimized/fideua-1200w.jpg 1200w,
+                    images/optimized/fideua-1600w.jpg 1600w"
+            sizes="(max-width: 600px) 100vw,
+                   (max-width: 900px) 50vw,
+                   33vw"
+            alt="Fideuà de marisc amb allioli"
+            loading="lazy">
           <div class="targeta__cos">
             <span class="targeta__categoria">Segons</span>
             <h3>Fideuà</h3>
@@ -84,7 +132,17 @@
         </li>
 
         <li class="targeta" data-categoria="segons">
-          <img src="images/paella.jpg" alt="Paella valenciana amb pollastre i verdures">
+          <img
+            src="images/optimized/paella-768w.jpg"
+            srcset="images/optimized/paella-480w.jpg 480w,
+                    images/optimized/paella-768w.jpg 768w,
+                    images/optimized/paella-1200w.jpg 1200w,
+                    images/optimized/paella-1600w.jpg 1600w"
+            sizes="(max-width: 600px) 100vw,
+                   (max-width: 900px) 50vw,
+                   33vw"
+            alt="Paella valenciana amb pollastre i verdures"
+            loading="lazy">
           <div class="targeta__cos">
             <span class="targeta__categoria">Segons</span>
             <h3>Paella Valenciana</h3>
@@ -94,7 +152,17 @@
         </li>
 
         <li class="targeta" data-categoria="postres">
-          <img src="images/crema-catalana.jpg" alt="Crema catalana amb sucre cremat">
+          <img
+            src="images/optimized/crema-catalana-768w.jpg"
+            srcset="images/optimized/crema-catalana-480w.jpg 480w,
+                    images/optimized/crema-catalana-768w.jpg 768w,
+                    images/optimized/crema-catalana-1200w.jpg 1200w,
+                    images/optimized/crema-catalana-1600w.jpg 1600w"
+            sizes="(max-width: 600px) 100vw,
+                   (max-width: 900px) 50vw,
+                   33vw"
+            alt="Crema catalana amb sucre cremat"
+            loading="lazy">
           <div class="targeta__cos">
             <span class="targeta__categoria">Postres</span>
             <h3>Crema Catalana</h3>
@@ -104,7 +172,17 @@
         </li>
 
         <li class="targeta" data-categoria="primers">
-          <img src="images/escalivada.jpg" alt="Escalivada de verdures rostides amb oli">
+          <img
+            src="images/optimized/escalivada-768w.jpg"
+            srcset="images/optimized/escalivada-480w.jpg 480w,
+                    images/optimized/escalivada-768w.jpg 768w,
+                    images/optimized/escalivada-1200w.jpg 1200w,
+                    images/optimized/escalivada-1600w.jpg 1600w"
+            sizes="(max-width: 600px) 100vw,
+                   (max-width: 900px) 50vw,
+                   33vw"
+            alt="Escalivada de verdures rostides amb oli"
+            loading="lazy">
           <div class="targeta__cos">
             <span class="targeta__categoria">Primers</span>
             <h3>Escalivada</h3>
@@ -114,7 +192,17 @@
         </li>
 
         <li class="targeta" data-categoria="postres">
-          <img src="images/turro.jpg" alt="Torró d'Alacant amb ametlles">
+          <img
+            src="images/optimized/turro-768w.jpg"
+            srcset="images/optimized/turro-480w.jpg 480w,
+                    images/optimized/turro-768w.jpg 768w,
+                    images/optimized/turro-1200w.jpg 1200w,
+                    images/optimized/turro-1600w.jpg 1600w"
+            sizes="(max-width: 600px) 100vw,
+                   (max-width: 900px) 50vw,
+                   33vw"
+            alt="Torró d'Alacant amb ametlles"
+            loading="lazy">
           <div class="targeta__cos">
             <span class="targeta__categoria">Postres</span>
             <h3>Torró d'Alacant</h3>

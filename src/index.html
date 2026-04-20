@@ -15,6 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ca_ES">
   <title>Cuina Nostra — Receptes Mediterrànies</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="scss/main.scss">
 </head>
 
@@ -22,11 +23,39 @@
 
   <a href="#contingut-principal" class="skip-link">Salta al contingut principal</a>
 
-  <a href="#contingut-principal" class="skip-link">Salta al contingut principal</a>
-
   <header>
     <nav aria-label="Navegació principal">
-      <a href="index.html" class="nav__logo">Cuina Nostra</a>
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">Cuina Nostra</span>
+        <svg class="olivera" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+          <!-- Tronc/branca -->
+          <path class="olivera__tronc"
+                d="M 10 85 Q 60 65 120 50 T 190 20"
+                fill="none"
+                stroke="#8B6F47"
+                stroke-width="2.5"
+                stroke-linecap="round"/>
+          <!-- Fulles -->
+          <g transform="translate(45 75) rotate(-40)">
+            <ellipse class="olivera__fulla olivera__fulla--1" cx="0" cy="0" rx="14" ry="5" fill="#6B8E4E"/>
+          </g>
+          <g transform="translate(80 60) rotate(30)">
+            <ellipse class="olivera__fulla olivera__fulla--2" cx="0" cy="0" rx="14" ry="5" fill="#7A9E5A"/>
+          </g>
+          <g transform="translate(115 48) rotate(-35)">
+            <ellipse class="olivera__fulla olivera__fulla--3" cx="0" cy="0" rx="13" ry="4.5" fill="#6B8E4E"/>
+          </g>
+          <g transform="translate(150 35) rotate(25)">
+            <ellipse class="olivera__fulla olivera__fulla--4" cx="0" cy="0" rx="13" ry="4.5" fill="#7A9E5A"/>
+          </g>
+          <g transform="translate(180 20) rotate(-30)">
+            <ellipse class="olivera__fulla olivera__fulla--5" cx="0" cy="0" rx="11" ry="4" fill="#6B8E4E"/>
+          </g>
+          <!-- Olives -->
+          <circle class="olivera__oliva olivera__oliva--1" cx="95" cy="68" r="4" fill="#4A5D3A"/>
+          <circle class="olivera__oliva olivera__oliva--2" cx="130" cy="55" r="4" fill="#4A5D3A"/>
+        </svg>
+      </a>
       <div class="nav__links" id="nav__links">
         <a href="index.html" aria-current="page">Inici</a>
         <a href="categoria.html">Receptes</a>
@@ -62,7 +91,37 @@
       <div class="targetes">
 
         <article class="targeta">
-          <img src="images/pa-amb-tomaquet.jpg" alt="Pa amb tomàquet amb oli d'oliva i all">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="images/optimized/pa-amb-tomaquet-480w.avif 480w,
+                      images/optimized/pa-amb-tomaquet-768w.avif 768w,
+                      images/optimized/pa-amb-tomaquet-1200w.avif 1200w,
+                      images/optimized/pa-amb-tomaquet-1600w.avif 1600w"
+              sizes="(max-width: 600px) 100vw,
+                     (max-width: 900px) 50vw,
+                     33vw">
+            <source
+              type="image/webp"
+              srcset="images/optimized/pa-amb-tomaquet-480w.webp 480w,
+                      images/optimized/pa-amb-tomaquet-768w.webp 768w,
+                      images/optimized/pa-amb-tomaquet-1200w.webp 1200w,
+                      images/optimized/pa-amb-tomaquet-1600w.webp 1600w"
+              sizes="(max-width: 600px) 100vw,
+                     (max-width: 900px) 50vw,
+                     33vw">
+            <img
+              src="images/optimized/pa-amb-tomaquet-768w.jpg"
+              srcset="images/optimized/pa-amb-tomaquet-480w.jpg 480w,
+                      images/optimized/pa-amb-tomaquet-768w.jpg 768w,
+                      images/optimized/pa-amb-tomaquet-1200w.jpg 1200w,
+                      images/optimized/pa-amb-tomaquet-1600w.jpg 1600w"
+              sizes="(max-width: 600px) 100vw,
+                     (max-width: 900px) 50vw,
+                     33vw"
+              alt="Pa amb tomàquet amb oli d'oliva i all"
+              loading="lazy">
+          </picture>
           <div class="targeta__cos">
             <h3>Pa amb Tomàquet</h3>
             <p>El clàssic català per excel·lència. Senzill, fresc i deliciós.</p>
@@ -71,7 +130,37 @@
         </article>
 
         <article class="targeta">
-          <img src="images/fideua.jpg" alt="Fideuà de marisc amb allioli">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="images/optimized/fideua-480w.avif 480w,
+                      images/optimized/fideua-768w.avif 768w,
+                      images/optimized/fideua-1200w.avif 1200w,
+                      images/optimized/fideua-1600w.avif 1600w"
+              sizes="(max-width: 600px) 100vw,
+                     (max-width: 900px) 50vw,
+                     33vw">
+            <source
+              type="image/webp"
+              srcset="images/optimized/fideua-480w.webp 480w,
+                      images/optimized/fideua-768w.webp 768w,
+                      images/optimized/fideua-1200w.webp 1200w,
+                      images/optimized/fideua-1600w.webp 1600w"
+              sizes="(max-width: 600px) 100vw,
+                     (max-width: 900px) 50vw,
+                     33vw">
+            <img
+              src="images/optimized/fideua-768w.jpg"
+              srcset="images/optimized/fideua-480w.jpg 480w,
+                      images/optimized/fideua-768w.jpg 768w,
+                      images/optimized/fideua-1200w.jpg 1200w,
+                      images/optimized/fideua-1600w.jpg 1600w"
+              sizes="(max-width: 600px) 100vw,
+                     (max-width: 900px) 50vw,
+                     33vw"
+              alt="Fideuà de marisc amb allioli"
+              loading="lazy">
+          </picture>
           <div class="targeta__cos">
             <h3>Fideuà</h3>
             <p>El plat estrella de la costa valenciana, fet amb fideus i marisc fresc.</p>

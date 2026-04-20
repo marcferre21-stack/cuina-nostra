@@ -8,6 +8,7 @@ $color-fons: #faf8f5;
 $color-text: #1a1a1a;
 $color-accent: #c4622d;
 $color-accent-fosc: #9e4e24;
+$color-accent-foscor: #7c3d1c; // Variant encara més fosca per hover (WCAG AA ++)
 $color-secundari: #4a6741;
 $color-gris: #6b6b6b;
 $color-gris-clar: #e8e4df;
@@ -25,7 +26,7 @@ $breakpoint-tablet: 768px;
 $breakpoint-mobil: 480px;
 
 // ============================================
-// RESET I BASE
+// BASE
 // ============================================
 
 *,
@@ -59,22 +60,23 @@ ul {
 }
 
 a {
-  color: $color-accent;
+  
+  color: $color-accent-fosc;
   text-decoration: none;
 
   &:hover {
-    color: $color-accent-fosc;
+    color: $color-accent-foscor;
     text-decoration: underline;
   }
 
   &:focus {
-    outline: 3px solid $color-accent;
+    outline: 3px solid $color-accent-fosc;
     outline-offset: 3px;
   }
 }
 
 // ============================================
-// ACCESSIBILITAT — SKIP LINK
+// ACCESSIBILITAT
 // ============================================
 
 .skip-link {
@@ -162,6 +164,9 @@ nav {
   z-index: 100;
 
   .nav__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
     font-family: $font-titol;
     font-size: 1.4rem;
     font-style: italic;
@@ -180,6 +185,7 @@ nav {
     align-items: center;
 
     a {
+      position: relative;
       font-family: $font-cos;
       font-weight: 700;
       font-size: 0.85rem;
@@ -188,16 +194,35 @@ nav {
       color: $color-gris;
       text-decoration: none;
       transition: color 0.2s ease;
+      padding-bottom: 4px;
+
+      // Subratllat animat que creix d'esquerra a dreta
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: $color-accent;
+        transition: width 0.3s ease;
+      }
 
       &:hover {
         color: $color-accent;
         text-decoration: none;
+
+        &::after {
+          width: 100%;
+        }
       }
 
       &[aria-current="page"] {
         color: $color-accent;
-        border-bottom: 2px solid $color-accent;
-        padding-bottom: 2px;
+
+        &::after {
+          width: 100%;
+        }
       }
     }
   }
@@ -251,6 +276,36 @@ nav {
   display: flex;
   align-items: center;
   padding: $espai-xl $espai-l;
+
+  // Forma creativa ONADA (estil mediterrani)
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 88%,
+    85% 94%,
+    70% 90%,
+    50% 95%,
+    30% 90%,
+    15% 94%,
+    0 88%
+  );
+  transition: clip-path 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+  // Les onades es veuen més al passr el ratolí per damunt
+  &:hover {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 86%,
+      85% 96%,
+      70% 88%,
+      50% 97%,
+      30% 88%,
+      15% 96%,
+      0 86%
+    );
+  }
 
   &__contingut {
     max-width: $mida-maxima;
@@ -337,13 +392,20 @@ main {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   margin-top: $espai-m;
 
   &:hover {
     background-color: $color-accent-fosc;
     color: white;
     text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
   &:focus {
@@ -372,12 +434,17 @@ main {
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    img {
+      transform: scale(1.05);
+    }
   }
 
   img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: transform 0.5s ease;
   }
 
   &__cos {
@@ -404,7 +471,8 @@ main {
   &__categoria {
     display: inline-block;
     background-color: $color-gris-clar;
-    color: $color-gris;
+    // $color-accent-fosc sobre gris-clar = 4.65:1 (passa AA) i reforça la identitat visual
+    color: $color-accent-fosc;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -533,7 +601,7 @@ article {
 }
 
 // ============================================
-// SWIPER — CARRUSEL
+// CARRUSEL
 // ============================================
 
 .swiper {
@@ -702,7 +770,7 @@ footer {
 }
 
 // ============================================
-// ACCESSIBILITAT — CLASSE INVISIBLE
+// ACCESSIBILITAT invisible class
 // ============================================
 
 .sr-only {
@@ -790,24 +858,41 @@ table {
   background-color: $color-accent;
   padding: $espai-xl $espai-l;
   text-align: center;
+  overflow: hidden;
 
   h2 {
     color: white;
     font-style: italic;
     font-size: clamp(1.8rem, 4vw, 3rem);
     margin-bottom: 0;
+    animation: slideInFromLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
   }
 
   p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
+    
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 500;
     margin: $espai-s 0 0 0;
     max-width: 100%;
+    animation: slideInFromLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
+  }
+}
+
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 // ============================================
-// PAS A PAS EN IMATGES
+// IMATGES
 // ============================================
 
 .passos-imatges {
@@ -855,4 +940,122 @@ table {
   font-style: italic;
   font-size: 1.2rem;
   color: white;
+}
+
+// ============================================
+// SVG ANIMAT — BRANCA D'OLIVERA
+// ============================================
+
+.olivera {
+  display: inline-block;
+  width: 70px;
+  height: auto;
+  vertical-align: middle;
+  overflow: visible;
+  flex-shrink: 0;
+
+  
+  &__tronc {
+    stroke-dasharray: 280;
+    stroke-dashoffset: 280;
+    animation: olivera-dibuixar 1.5s ease-out forwards;
+  }
+
+  
+  &__fulla,
+  &__oliva {
+    transform-origin: center;
+    transform-box: fill-box;
+    opacity: 0;
+    transform: scale(0);
+    animation: olivera-apareixer 0.6s ease-out forwards;
+  }
+
+  // Fulles: entrada esglaonada amb moviment natural imitant la brisa
+  // Cada fulla té velocitat i retard lleugerament diferents per fer-ho natural
+  &__fulla--1 {
+    animation:
+      olivera-apareixer 0.6s ease-out 0.9s forwards,
+      olivera-oscillar 4s ease-in-out 1.5s infinite;
+  }
+  &__fulla--2 {
+    animation:
+      olivera-apareixer 0.6s ease-out 1.1s forwards,
+      olivera-oscillar 4.5s ease-in-out 1.7s infinite;
+  }
+  &__fulla--3 {
+    animation:
+      olivera-apareixer 0.6s ease-out 1.3s forwards,
+      olivera-oscillar 3.8s ease-in-out 1.9s infinite;
+  }
+  &__fulla--4 {
+    animation:
+      olivera-apareixer 0.6s ease-out 1.5s forwards,
+      olivera-oscillar 4.3s ease-in-out 2.1s infinite;
+  }
+  &__fulla--5 {
+    animation:
+      olivera-apareixer 0.6s ease-out 1.7s forwards,
+      olivera-oscillar 5s ease-in-out 2.3s infinite;
+  }
+
+  
+  &__oliva--1 { animation-delay: 2s; }
+  &__oliva--2 { animation-delay: 2.2s; }
+}
+
+@keyframes olivera-dibuixar {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes olivera-apareixer {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes olivera-oscillar {
+  0%   { transform: scale(1) rotate(0deg); }
+  25%  { transform: scale(1) rotate(3deg); }
+  75%  { transform: scale(1) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+// Accessibilitat: desactivar animacions si l'usuari ha demanat reduir moviment
+@media (prefers-reduced-motion: reduce) {
+  .olivera__tronc,
+  .olivera__fulla,
+  .olivera__oliva {
+    animation: none;
+    stroke-dashoffset: 0;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .hero {
+    transition: none;
+  }
+
+  .capcalera-interior h2,
+  .capcalera-interior p {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  
+  .btn,
+  .targeta,
+  .targeta img,
+  .nav__links a::after {
+    transition: none;
+  }
+
+  .btn:hover,
+  .targeta:hover,
+  .targeta:hover img {
+    transform: none;
+  }
 }

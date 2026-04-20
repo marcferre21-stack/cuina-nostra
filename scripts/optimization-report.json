@@ -1,0 +1,1229 @@
+{
+  "generatedAt": "2026-04-19T15:22:53.998Z",
+  "totalImages": 13,
+  "totalOriginalBytes": 4158446,
+  "totalOptimizedBytes": 1537968,
+  "totalOriginalHuman": "3.97 MB",
+  "totalOptimizedHuman": "1.47 MB",
+  "totalImprovementPercent": 63,
+  "images": [
+    {
+      "name": "crema-catalana.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 95896,
+      "originalSizeHuman": "93.6 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 50028,
+      "optimizedSizeHuman": "48.9 KB",
+      "improvementPercent": 47.8,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "crema-catalana-480w.avif",
+          "size": 13877
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "crema-catalana-480w.webp",
+          "size": 17440
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "crema-catalana-480w.jpg",
+          "size": 22458
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "crema-catalana-768w.avif",
+          "size": 24220
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "crema-catalana-768w.webp",
+          "size": 34120
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "crema-catalana-768w.jpg",
+          "size": 46915
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "crema-catalana-1200w.avif",
+          "size": 35405
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "crema-catalana-1200w.webp",
+          "size": 50028
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "crema-catalana-1200w.jpg",
+          "size": 74726
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "crema-catalana-1600w.avif",
+          "size": 35405
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "crema-catalana-1600w.webp",
+          "size": 50028
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "crema-catalana-1600w.jpg",
+          "size": 74726
+        }
+      ]
+    },
+    {
+      "name": "escalivada.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 130409,
+      "originalSizeHuman": "127.4 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 88668,
+      "optimizedSizeHuman": "86.6 KB",
+      "improvementPercent": 32,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "escalivada-480w.avif",
+          "size": 23039
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "escalivada-480w.webp",
+          "size": 25324
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "escalivada-480w.jpg",
+          "size": 30307
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "escalivada-768w.avif",
+          "size": 40823
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "escalivada-768w.webp",
+          "size": 48974
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "escalivada-768w.jpg",
+          "size": 63129
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "escalivada-1200w.avif",
+          "size": 66874
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "escalivada-1200w.webp",
+          "size": 88668
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "escalivada-1200w.jpg",
+          "size": 123562
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "escalivada-1600w.avif",
+          "size": 77453
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "escalivada-1600w.webp",
+          "size": 95230
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "escalivada-1600w.jpg",
+          "size": 132808
+        }
+      ]
+    },
+    {
+      "name": "fideua-1.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 316617,
+      "originalSizeHuman": "309.2 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 189448,
+      "optimizedSizeHuman": "185.0 KB",
+      "improvementPercent": 40.2,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "fideua-1-480w.avif",
+          "size": 45284
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "fideua-1-480w.webp",
+          "size": 47098
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "fideua-1-480w.jpg",
+          "size": 46115
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "fideua-1-768w.avif",
+          "size": 89261
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "fideua-1-768w.webp",
+          "size": 97164
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "fideua-1-768w.jpg",
+          "size": 103498
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "fideua-1-1200w.avif",
+          "size": 163472
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "fideua-1-1200w.webp",
+          "size": 189448
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "fideua-1-1200w.jpg",
+          "size": 215778
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "fideua-1-1600w.avif",
+          "size": 163472
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "fideua-1-1600w.webp",
+          "size": 189448
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "fideua-1-1600w.jpg",
+          "size": 215778
+        }
+      ]
+    },
+    {
+      "name": "fideua-2.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 351553,
+      "originalSizeHuman": "343.3 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 207076,
+      "optimizedSizeHuman": "202.2 KB",
+      "improvementPercent": 41.1,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "fideua-2-480w.avif",
+          "size": 72254
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "fideua-2-480w.webp",
+          "size": 80254
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "fideua-2-480w.jpg",
+          "size": 73203
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "fideua-2-768w.avif",
+          "size": 156455
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "fideua-2-768w.webp",
+          "size": 186878
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "fideua-2-768w.jpg",
+          "size": 177450
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "fideua-2-1200w.avif",
+          "size": 177796
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "fideua-2-1200w.webp",
+          "size": 207076
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "fideua-2-1200w.jpg",
+          "size": 196087
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "fideua-2-1600w.avif",
+          "size": 177796
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "fideua-2-1600w.webp",
+          "size": 207076
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "fideua-2-1600w.jpg",
+          "size": 196087
+        }
+      ]
+    },
+    {
+      "name": "fideua-3.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 46586,
+      "originalSizeHuman": "45.5 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 32168,
+      "optimizedSizeHuman": "31.4 KB",
+      "improvementPercent": 30.9,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "fideua-3-480w.avif",
+          "size": 18026
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "fideua-3-480w.webp",
+          "size": 22296
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "fideua-3-480w.jpg",
+          "size": 27943
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "fideua-3-768w.avif",
+          "size": 25534
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "fideua-3-768w.webp",
+          "size": 32168
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "fideua-3-768w.jpg",
+          "size": 44692
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "fideua-3-1200w.avif",
+          "size": 25534
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "fideua-3-1200w.webp",
+          "size": 32168
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "fideua-3-1200w.jpg",
+          "size": 44692
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "fideua-3-1600w.avif",
+          "size": 25534
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "fideua-3-1600w.webp",
+          "size": 32168
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "fideua-3-1600w.jpg",
+          "size": 44692
+        }
+      ]
+    },
+    {
+      "name": "fideua.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 317002,
+      "originalSizeHuman": "309.6 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 96734,
+      "optimizedSizeHuman": "94.5 KB",
+      "improvementPercent": 69.5,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "fideua-480w.avif",
+          "size": 21519
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "fideua-480w.webp",
+          "size": 26956
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "fideua-480w.jpg",
+          "size": 33997
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "fideua-768w.avif",
+          "size": 43120
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "fideua-768w.webp",
+          "size": 54884
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "fideua-768w.jpg",
+          "size": 74542
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "fideua-1200w.avif",
+          "size": 71509
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "fideua-1200w.webp",
+          "size": 96734
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "fideua-1200w.jpg",
+          "size": 146938
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "fideua-1600w.avif",
+          "size": 95591
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "fideua-1600w.webp",
+          "size": 136288
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "fideua-1600w.jpg",
+          "size": 220850
+        },
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "fideua-mobile-480w.avif",
+          "size": 28273,
+          "crop": "mobile"
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "fideua-mobile-480w.webp",
+          "size": 36304,
+          "crop": "mobile"
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "fideua-mobile-480w.jpg",
+          "size": 47981,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "fideua-mobile-768w.avif",
+          "size": 50548,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "fideua-mobile-768w.webp",
+          "size": 66316,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "fideua-mobile-768w.jpg",
+          "size": 98865,
+          "crop": "mobile"
+        }
+      ]
+    },
+    {
+      "name": "hero.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 200756,
+      "originalSizeHuman": "196.1 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 99884,
+      "optimizedSizeHuman": "97.5 KB",
+      "improvementPercent": 50.2,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "hero-480w.avif",
+          "size": 28035
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "hero-480w.webp",
+          "size": 26864
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "hero-480w.jpg",
+          "size": 30866
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "hero-768w.avif",
+          "size": 54784
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "hero-768w.webp",
+          "size": 57978
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "hero-768w.jpg",
+          "size": 68173
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "hero-1200w.avif",
+          "size": 96835
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "hero-1200w.webp",
+          "size": 99884
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "hero-1200w.jpg",
+          "size": 122791
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "hero-1600w.avif",
+          "size": 96835
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "hero-1600w.webp",
+          "size": 99884
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "hero-1600w.jpg",
+          "size": 122791
+        },
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "hero-mobile-480w.avif",
+          "size": 29826,
+          "crop": "mobile"
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "hero-mobile-480w.webp",
+          "size": 34954,
+          "crop": "mobile"
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "hero-mobile-480w.jpg",
+          "size": 45366,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "hero-mobile-768w.avif",
+          "size": 60177,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "hero-mobile-768w.webp",
+          "size": 63186,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "hero-mobile-768w.jpg",
+          "size": 80257,
+          "crop": "mobile"
+        }
+      ]
+    },
+    {
+      "name": "pa-amb-tomaquet-1.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 273515,
+      "originalSizeHuman": "267.1 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 54720,
+      "optimizedSizeHuman": "53.4 KB",
+      "improvementPercent": 80,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-1-480w.avif",
+          "size": 12698
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-1-480w.webp",
+          "size": 16652
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-1-480w.jpg",
+          "size": 22814
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-1-768w.avif",
+          "size": 21169
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-1-768w.webp",
+          "size": 30970
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-1-768w.jpg",
+          "size": 46013
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-1-1200w.avif",
+          "size": 34998
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-1-1200w.webp",
+          "size": 54720
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-1-1200w.jpg",
+          "size": 88479
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-1-1600w.avif",
+          "size": 48359
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-1-1600w.webp",
+          "size": 76230
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-1-1600w.jpg",
+          "size": 134195
+        }
+      ]
+    },
+    {
+      "name": "pa-amb-tomaquet-2.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 611809,
+      "originalSizeHuman": "597.5 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 129560,
+      "optimizedSizeHuman": "126.5 KB",
+      "improvementPercent": 78.8,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-2-480w.avif",
+          "size": 23002
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-2-480w.webp",
+          "size": 26970
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-2-480w.jpg",
+          "size": 31182
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-2-768w.avif",
+          "size": 49949
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-2-768w.webp",
+          "size": 61598
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-2-768w.jpg",
+          "size": 74079
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-2-1200w.avif",
+          "size": 100818
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-2-1200w.webp",
+          "size": 129560
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-2-1200w.jpg",
+          "size": 163213
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-2-1600w.avif",
+          "size": 153457
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-2-1600w.webp",
+          "size": 203880
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-2-1600w.jpg",
+          "size": 266983
+        }
+      ]
+    },
+    {
+      "name": "pa-amb-tomaquet-3.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 645079,
+      "originalSizeHuman": "630.0 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 168472,
+      "optimizedSizeHuman": "164.5 KB",
+      "improvementPercent": 73.9,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-3-480w.avif",
+          "size": 25112
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-3-480w.webp",
+          "size": 31826
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-3-480w.jpg",
+          "size": 31127
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-3-768w.avif",
+          "size": 62156
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-3-768w.webp",
+          "size": 78750
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-3-768w.jpg",
+          "size": 77454
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-3-1200w.avif",
+          "size": 124464
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-3-1200w.webp",
+          "size": 168472
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-3-1200w.jpg",
+          "size": 178050
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-3-1600w.avif",
+          "size": 183333
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-3-1600w.webp",
+          "size": 250534
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-3-1600w.jpg",
+          "size": 294762
+        }
+      ]
+    },
+    {
+      "name": "pa-amb-tomaquet.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 670548,
+      "originalSizeHuman": "654.8 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 175598,
+      "optimizedSizeHuman": "171.5 KB",
+      "improvementPercent": 73.8,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-480w.avif",
+          "size": 32554
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-480w.webp",
+          "size": 36302
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-480w.jpg",
+          "size": 37596
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-768w.avif",
+          "size": 74402
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-768w.webp",
+          "size": 84952
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-768w.jpg",
+          "size": 89781
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-1200w.avif",
+          "size": 143857
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-1200w.webp",
+          "size": 175598
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-1200w.jpg",
+          "size": 195887
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-1600w.avif",
+          "size": 206027
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-1600w.webp",
+          "size": 261458
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-1600w.jpg",
+          "size": 315455
+        },
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-mobile-480w.avif",
+          "size": 44575,
+          "crop": "mobile"
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-mobile-480w.webp",
+          "size": 54980,
+          "crop": "mobile"
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-mobile-480w.jpg",
+          "size": 62785,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "pa-amb-tomaquet-mobile-768w.avif",
+          "size": 85028,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "pa-amb-tomaquet-mobile-768w.webp",
+          "size": 107048,
+          "crop": "mobile"
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "pa-amb-tomaquet-mobile-768w.jpg",
+          "size": 136720,
+          "crop": "mobile"
+        }
+      ]
+    },
+    {
+      "name": "paella.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 403262,
+      "originalSizeHuman": "393.8 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 202078,
+      "optimizedSizeHuman": "197.3 KB",
+      "improvementPercent": 49.9,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "paella-480w.avif",
+          "size": 37338
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "paella-480w.webp",
+          "size": 38164
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "paella-480w.jpg",
+          "size": 40639
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "paella-768w.avif",
+          "size": 89678
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "paella-768w.webp",
+          "size": 91918
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "paella-768w.jpg",
+          "size": 96480
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "paella-1200w.avif",
+          "size": 187191
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "paella-1200w.webp",
+          "size": 202078
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "paella-1200w.jpg",
+          "size": 219333
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "paella-1600w.avif",
+          "size": 219108
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "paella-1600w.webp",
+          "size": 236378
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "paella-1600w.jpg",
+          "size": 248802
+        }
+      ]
+    },
+    {
+      "name": "turro.jpg",
+      "originalFormat": "JPG",
+      "originalSize": 95414,
+      "originalSizeHuman": "93.2 KB",
+      "optimizedFormat": "WebP (1200w)",
+      "optimizedSize": 43534,
+      "optimizedSizeHuman": "42.5 KB",
+      "improvementPercent": 54.4,
+      "variants": [
+        {
+          "width": 480,
+          "format": "avif",
+          "file": "turro-480w.avif",
+          "size": 9568
+        },
+        {
+          "width": 480,
+          "format": "webp",
+          "file": "turro-480w.webp",
+          "size": 12222
+        },
+        {
+          "width": 480,
+          "format": "jpg",
+          "file": "turro-480w.jpg",
+          "size": 18061
+        },
+        {
+          "width": 768,
+          "format": "avif",
+          "file": "turro-768w.avif",
+          "size": 16765
+        },
+        {
+          "width": 768,
+          "format": "webp",
+          "file": "turro-768w.webp",
+          "size": 23170
+        },
+        {
+          "width": 768,
+          "format": "jpg",
+          "file": "turro-768w.jpg",
+          "size": 36885
+        },
+        {
+          "width": 1200,
+          "format": "avif",
+          "file": "turro-1200w.avif",
+          "size": 29850
+        },
+        {
+          "width": 1200,
+          "format": "webp",
+          "file": "turro-1200w.webp",
+          "size": 43534
+        },
+        {
+          "width": 1200,
+          "format": "jpg",
+          "file": "turro-1200w.jpg",
+          "size": 77355
+        },
+        {
+          "width": 1600,
+          "format": "avif",
+          "file": "turro-1600w.avif",
+          "size": 29850
+        },
+        {
+          "width": 1600,
+          "format": "webp",
+          "file": "turro-1600w.webp",
+          "size": 43534
+        },
+        {
+          "width": 1600,
+          "format": "jpg",
+          "file": "turro-1600w.jpg",
+          "size": 77355
+        }
+      ]
+    }
+  ]
+}

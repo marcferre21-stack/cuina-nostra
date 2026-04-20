@@ -15,6 +15,7 @@
   <meta property="og:type" content="article">
   <meta property="og:locale" content="ca_ES">
   <title>Pa amb Tomàquet — Cuina Nostra</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="scss/main.scss">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 </head>
@@ -25,7 +26,34 @@
 
   <header>
     <nav aria-label="Navegació principal">
-      <a href="index.html" class="nav__logo">Cuina Nostra</a>
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-text">Cuina Nostra</span>
+        <svg class="olivera" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+          <path class="olivera__tronc"
+                d="M 10 85 Q 60 65 120 50 T 190 20"
+                fill="none"
+                stroke="#8B6F47"
+                stroke-width="2.5"
+                stroke-linecap="round"/>
+          <g transform="translate(45 75) rotate(-40)">
+            <ellipse class="olivera__fulla olivera__fulla--1" cx="0" cy="0" rx="14" ry="5" fill="#6B8E4E"/>
+          </g>
+          <g transform="translate(80 60) rotate(30)">
+            <ellipse class="olivera__fulla olivera__fulla--2" cx="0" cy="0" rx="14" ry="5" fill="#7A9E5A"/>
+          </g>
+          <g transform="translate(115 48) rotate(-35)">
+            <ellipse class="olivera__fulla olivera__fulla--3" cx="0" cy="0" rx="13" ry="4.5" fill="#6B8E4E"/>
+          </g>
+          <g transform="translate(150 35) rotate(25)">
+            <ellipse class="olivera__fulla olivera__fulla--4" cx="0" cy="0" rx="13" ry="4.5" fill="#7A9E5A"/>
+          </g>
+          <g transform="translate(180 20) rotate(-30)">
+            <ellipse class="olivera__fulla olivera__fulla--5" cx="0" cy="0" rx="11" ry="4" fill="#6B8E4E"/>
+          </g>
+          <circle class="olivera__oliva olivera__oliva--1" cx="95" cy="68" r="4" fill="#4A5D3A"/>
+          <circle class="olivera__oliva olivera__oliva--2" cx="130" cy="55" r="4" fill="#4A5D3A"/>
+        </svg>
+      </a>
       <div class="nav__links" id="nav__links">
         <a href="index.html">Inici</a>
         <a href="categoria.html">Receptes</a>
@@ -48,8 +76,51 @@
     <article aria-labelledby="titol-recepta">
 
       <div class="recepta__capcalera">
-        <img src="images/pa-amb-tomaquet.jpg" alt="Pa amb tomàquet amb oli d'oliva verge extra i all"
-          class="recepta__imatge-destacada">
+        <picture>
+          <!-- MÒBIL: crop vertical (art direction) -->
+          <source
+            media="(max-width: 600px)"
+            type="image/avif"
+            srcset="images/optimized/pa-amb-tomaquet-mobile-480w.avif 480w,
+                    images/optimized/pa-amb-tomaquet-mobile-768w.avif 768w"
+            sizes="100vw">
+          <source
+            media="(max-width: 600px)"
+            type="image/webp"
+            srcset="images/optimized/pa-amb-tomaquet-mobile-480w.webp 480w,
+                    images/optimized/pa-amb-tomaquet-mobile-768w.webp 768w"
+            sizes="100vw">
+          <source
+            media="(max-width: 600px)"
+            srcset="images/optimized/pa-amb-tomaquet-mobile-480w.jpg 480w,
+                    images/optimized/pa-amb-tomaquet-mobile-768w.jpg 768w"
+            sizes="100vw">
+
+          <!-- ESCRIPTORI: imatge landscape normal -->
+          <source
+            type="image/avif"
+            srcset="images/optimized/pa-amb-tomaquet-480w.avif 480w,
+                    images/optimized/pa-amb-tomaquet-768w.avif 768w,
+                    images/optimized/pa-amb-tomaquet-1200w.avif 1200w,
+                    images/optimized/pa-amb-tomaquet-1600w.avif 1600w"
+            sizes="(max-width: 1200px) 100vw, 1200px">
+          <source
+            type="image/webp"
+            srcset="images/optimized/pa-amb-tomaquet-480w.webp 480w,
+                    images/optimized/pa-amb-tomaquet-768w.webp 768w,
+                    images/optimized/pa-amb-tomaquet-1200w.webp 1200w,
+                    images/optimized/pa-amb-tomaquet-1600w.webp 1600w"
+            sizes="(max-width: 1200px) 100vw, 1200px">
+          <img
+            src="images/optimized/pa-amb-tomaquet-1200w.jpg"
+            srcset="images/optimized/pa-amb-tomaquet-480w.jpg 480w,
+                    images/optimized/pa-amb-tomaquet-768w.jpg 768w,
+                    images/optimized/pa-amb-tomaquet-1200w.jpg 1200w,
+                    images/optimized/pa-amb-tomaquet-1600w.jpg 1600w"
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            alt="Pa amb tomàquet amb oli d'oliva verge extra i all"
+            class="recepta__imatge-destacada">
+        </picture>
         <div class="recepta__info">
           <h2 id="titol-recepta">Pa amb Tomàquet</h2>
           <p class="recepta__descripcio">El plat més senzill i més estimat de la cuina catalana. Amb només quatre
@@ -87,17 +158,34 @@
       </section>
       <section aria-labelledby="titol-passos">
         <h3 id="titol-passos">Pas a pas en imatges</h3>
+        <!-- Tècnica 3: RESOLUTION SWITCHING PER DENSITAT DE PÍXELS (srcset amb descriptors 1x/2x).
+             Les imatges es mostren a mida fixa (~280px) dins la graella; el navegador
+             tria la versió 480w (1x) per a pantalles estàndard o 768w (2x) per a pantalles
+             Retina/HiDPI. Així totes les pantalles reben una imatge nítida sense sobrecarregar
+             les de densitat normal amb pes innecessari. -->
         <div class="passos-imatges">
           <figure>
-            <img src="images/pa-amb-tomaquet-1.jpg" alt="Pa torrat llest per fregar el tomàquet">
+            <img src="images/optimized/pa-amb-tomaquet-1-480w.jpg"
+                 srcset="images/optimized/pa-amb-tomaquet-1-480w.jpg 1x,
+                         images/optimized/pa-amb-tomaquet-1-768w.jpg 2x"
+                 alt="Pa torrat llest per fregar el tomàquet"
+                 loading="lazy">
             <figcaption>Pas 1: Torra el pa fins que quedi daurat</figcaption>
           </figure>
           <figure>
-            <img src="images/pa-amb-tomaquet-2.jpg" alt="Fregant el tomàquet madur sobre el pa">
+            <img src="images/optimized/pa-amb-tomaquet-2-480w.jpg"
+                 srcset="images/optimized/pa-amb-tomaquet-2-480w.jpg 1x,
+                         images/optimized/pa-amb-tomaquet-2-768w.jpg 2x"
+                 alt="Fregant el tomàquet madur sobre el pa"
+                 loading="lazy">
             <figcaption>Pas 2: Frega el tomàquet ben madur</figcaption>
           </figure>
           <figure>
-            <img src="images/pa-amb-tomaquet-3.jpg" alt="Pa amb tomàquet acabat amb oli d'oliva">
+            <img src="images/optimized/pa-amb-tomaquet-3-480w.jpg"
+                 srcset="images/optimized/pa-amb-tomaquet-3-480w.jpg 1x,
+                         images/optimized/pa-amb-tomaquet-3-768w.jpg 2x"
+                 alt="Pa amb tomàquet acabat amb oli d'oliva"
+                 loading="lazy">
             <figcaption>Pas 3: Afegeix oli d'oliva verge extra i sal</figcaption>
           </figure>
         </div>
