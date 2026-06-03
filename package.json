@@ -5,7 +5,9 @@
   "scripts": {
     "start": "parcel src/index.html src/categoria.html src/det1.html src/det2.html src/links.html",
     "build": "parcel build src/index.html src/categoria.html src/det1.html src/det2.html src/links.html --dist-dir dist --public-url ./",
-    "optimize-images": "node scripts/optimize-images.js"
+    "optimize-images": "node scripts/optimize-images.js",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +17,8 @@
     "@parcel/transformer-sass": "^2.16.4",
     "parcel": "^2.16.4",
     "sass": "^1.98.0",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "wrangler": "^4.97.0"
   },
   "dependencies": {
     "swiper": "^12.1.2"
