@@ -3,3 +3,10 @@ dist/
 .parcel-cache/
 .DS_Store
 PAC2-Memoria-v2.pdf
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
