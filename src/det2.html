@@ -17,7 +17,8 @@
   <title>Fideuà — Cuina Nostra</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="scss/main.scss">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"></noscript>
 </head>
 
 <body>
@@ -77,7 +78,7 @@
 
       <div class="recepta__capcalera">
         <img src="images/fideua.jpg" alt="Fideuà de marisc amb gambes, musclos i allioli"
-          class="recepta__imatge-destacada">
+          class="recepta__imatge-destacada" loading="eager">
         <div class="recepta__info">
           <h2 id="titol-recepta">Fideuà</h2>
           <p class="recepta__descripcio">El plat estrella de la costa valenciana. Una alternativa als fideus amb el
@@ -221,13 +222,13 @@
         <div class="swiper" aria-label="Galeria d'imatges de la fideuà" role="region">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="images/fideua-1.jpg" alt="Sofregit de ceba i tomàquet per a la fideuà">
+              <img src="images/fideua-1.jpg" alt="Sofregit de ceba i tomàquet per a la fideuà" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="images/fideua-2.jpg" alt="Fideus tostos a la paella amb el sofregit">
+              <img src="images/fideua-2.jpg" alt="Fideus tostos a la paella amb el sofregit" loading="lazy">
             </div>
             <div class="swiper-slide">
-              <img src="images/fideua-3.jpg" alt="Fideuà acabada amb gambes i musclos">
+              <img src="images/fideua-3.jpg" alt="Fideuà acabada amb gambes i musclos" loading="lazy">
             </div>
           </div>
           <div class="swiper-pagination" aria-hidden="true"></div>
@@ -242,6 +243,7 @@
         <div class="video-contenidor">
           <iframe src="https://www.youtube.com/embed/GBtKGwIfFCE?si=v1r6bByyMC0XT02o"
             title="Vídeo recepta fideuà valenciana"
+            loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
           </iframe>
@@ -260,7 +262,7 @@
   </div>
 </footer>
 
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/main.js" defer></script>
 
 </body>
 
