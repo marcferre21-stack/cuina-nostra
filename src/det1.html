@@ -17,8 +17,7 @@
   <title>Pa amb Tomàquet — Cuina Nostra</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="scss/main.scss">
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"></noscript>
+
 </head>
 
 <body>
@@ -301,6 +300,37 @@
 </footer>
 
   <script type="module" src="js/main.js" defer></script>
+  <script>
+    const swiperEl = document.querySelector('.swiper');
+    if (swiperEl) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css';
+            document.head.appendChild(link);
+
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js';
+            script.onload = () => {
+              new Swiper('.swiper', {
+                loop: true,
+                pagination: { el: '.swiper-pagination', clickable: true },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+            };
+            document.head.appendChild(script);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '200px' });
+      observer.observe(swiperEl);
+    }
+  </script>
 
 </body>
 
